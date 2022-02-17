@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li style="margin-left: 3%;"><a class="voyages" href="#Voyages">Voyages</a></li>
+        <li><a href="#Séjour">Séjour</a></li>
+        <li><a href="#aPropos">A propos</a></li>
+        <li style="float:right"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div container-image>
+    <img src="./photo.jpg" style="width: 100%; position: fixed;">
+    <div class="centre">Voyage en Inde</div>
+  </div>
+
+  <style>
+    body{
+      margin: 0px;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #414443;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  border-style: ridge;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.voyages) {
+  background-color: #414443;
+}
+
+.voyages {
+  background-color: #414443;
+}
+.container-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  font-weight: bold;
+}    
+  </style>
+</body>
+</html>

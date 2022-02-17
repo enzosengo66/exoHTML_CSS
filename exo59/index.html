@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice</title>
+</head>
+<body>
+  <h1 style="background-color: darksalmon; color: darkslategrey; text-align: center;">Contrôle le jour 🕛</h1>
+  <p>choisis le jour au quel tu veux être mais, attention aux conséquences...</p>
+  <form action="action_page.php">
+    <label for="date">Selectionne la date après le 01/01/2000</label>
+    <input type="date" id="date" name="date" min="2000-01-01">
+
+  </form>
+  <br>
+  <br>
+  <form action="action_page.php">
+    <label for="date">Selectionne la date avant le 01/01/1980</label>
+    <input type="date" id="date" name="date" max="1980-01-01">
+    
+  </form>
+  
+  <br>
+  <input type="submit" value="Valide si tu es prêt..">
+  
+    
+</body>
+</html>

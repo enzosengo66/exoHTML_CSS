@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>exercice</title>
+</head>
+<body>
+	<div class="container">
+		<div class="color">
+			<div class="red"></div>
+			<div class="blue"></div>
+			<div class="salmon"></div>
+		</div>
+
+	</div>
+
+
+<style>
+	.red, .blue, .salmon{
+		height: 100px;
+		width: 100px;
+		transition: 0.5s;
+	}
+	.red{
+		background-color: red;
+		
+	}
+	.blue{
+		background-color: #7FD8BE;
+	}
+	.salmon{
+		background-color: #EF8275;
+	}
+	.container:hover .color .red{
+		margin-left: 900px;
+		transition: 0.5s;
+		transition-duration: 1s;
+
+	}
+	.container:hover .color .blue{
+		margin-left: 900px;
+		transition: 0.5s;
+		transition-duration: 0.5s;
+	}
+	.container:hover .color .salmon{
+		margin-left: 900px;
+		transition: 0.5s;
+		transition-duration: 2.5s;
+
+	}
+
+</style>
+</body>
+</html>

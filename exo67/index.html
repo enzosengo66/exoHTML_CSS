@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice</title>
+</head>
+<body>
+  <h1>image text</h1>
+  <p>add some text</p> 
+  <div class="container">
+    <img src="./photo.jpg">
+    <div class="bottomLeft">bouton gauche</div>
+    <div class="topLeft">Top left</div>
+    <div class="topRight">Top right</div>
+    <div class="bottomRight">bouton droit</div>
+    <div class="centre">centre</div>
+  </div>
+  <style>
+    .container{
+      position: relative;
+    text-align: center;
+    }
+    img{
+      opacity: 0.5;
+    }
+    .bottomLeft{
+  position: absolute;
+  bottom: 7px;
+  left: 14px;
+  }
+
+  .topLeft {
+    position: absolute;
+    top: 7px;
+    left: 14px;
+  }
+
+  .topRight {
+    position: absolute;
+    top: 7px;
+    right: 14px;
+  }
+
+  .bottomRight {
+    position: absolute;
+    bottom: 7px;
+    right: 14px;
+  }
+
+  .centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  </style>
+</body>
+</html>

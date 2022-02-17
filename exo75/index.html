@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice</title>
+</head>
+<body>
+  <div class="head">
+    <div class="antenne">
+      <div class="antenne1 color"></div>
+      <div class="antenne2 color"></div>
+    </div>
+    <div class="tete bouge"></div>
+  
+    <div class="yeux">
+      <div class="oeil1"></div>
+      <div class="oeil2"></div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="bras1 color bouge"></div>
+    <div class="corps color"></div>
+    <div class="bras2 color"></div>
+  </div>
+  <div class="bas">
+    <div class="jambe1 color"></div>
+    <div class="jambe2 color bouge"></div>
+  </div>
+  <style>
+    body{
+      margin: 0px;
+      
+    }
+    
+    .color{
+      background-color: #A4CA39;
+    }
+    .head{
+      width: 960px;
+    }
+    /*tête tete head */
+    .antenne1, .antenne2{
+      display: inline-block;
+      position: relative;
+      border-top: solid 3px;
+      width: 7px;
+      height: 100px;
+      border-style: none;
+      border-radius: 50px;
+      top: 70px;
+    
+    }
+    .antenne1{
+      float: left;
+      left: 55%;
+      transform: rotate(-20deg);
+    }
+    .antenne2{
+      float: right;
+      transform: rotate(20deg);
+      right: 9%;
+    }
+    .tete{
+      position: relative;
+      height: 250px;
+      width: 500px;
+      background: #A4CA39;
+      border-top-left-radius: 240px;
+      border-top-right-radius: 240px;
+      float: right;
+      top: 90px;
+      transition: 0.5s;
+    }
+    
+    .oeil1, .oeil2{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 255);
+      display: inline-block;
+      position: relative;
+      top: 170px;
+    }
+    .oeil1{
+      float: left;
+      left: 58%;
+      
+  
+    }
+    .oeil2{
+      float: right;
+      right: -39%;
+      background-image: radial-gradient(red, black, black);
+      transition: 0.5s;
+    }
+    /* corps body */ 
+    .bras1, .bras2, .jambe1, .jambe2{
+      display: inline-block;
+      position: relative;
+      border-radius: 50px;
+      height: 249px;
+      width: 59px;
+    }
+    .bras1{
+      float: right;
+      top: 357px;
+      left: 34px;
+      transition: 0.5s;
+    }
+    .corps{
+      position: relative;
+      display: inline-block;
+      width: 500px;
+      height: 310px;
+      top: 104px;
+      left: 453px;
+      border-radius: 0 0 50px 50px;
+    }
+    .bras2{
+    top: 42px;
+    left: 464px;
+    }
+
+    /* bas  */
+    .jambe1{
+      left: 565px;
+    }
+    .jambe2{
+      left: 723px;
+    }
+    /*tete tête hover */
+    body:hover .bras1{
+      transform: rotate(20deg);
+      transition: 0.5s;
+    }
+    body:hover .tete{
+      transform: rotate(-10deg);
+      transition: 0.5s;
+    }
+    body:hover .jambe2{
+      top: -64px;
+    }
+    body:hover .oeil2{
+      width: 80px;
+      height: 10px;
+      transition: 0.5s;
+    }
+
+  </style>
+</body>
+</html>
