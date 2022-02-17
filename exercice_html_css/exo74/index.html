@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="ul">
+        <div class="ul-gauche nav-inline"><!--mettre en inline block-->
+          <a href="https://www.github.com" target="_blank" ><img src="./logo-github.png" style="width: 30px; top: 10px; position: relative;" class="nav-inline"></a>
+          <li class="github nav-inline nav-border li-border">Why GitHub</li>
+          <li class="team nav-inline nav-border li-border">Team</li>
+          <li class="enterprise nav-inline nav-border li-border">Enterprise</li>
+          <li class="explore nav-inline nav-border li-border">Explore</li>
+          <li class="marketplace nav-inline nav-border li-border">Marketplace</li>
+          <li class="pricing nav-inline nav-border li-border">Pricing</li>
+        </div>
+        <div class="ul-droite"><!--mettre en inline block-->
+          <div class="search-container nav-inline">
+            <form action="action_page.php" class="nav-inline">
+              <input type="search" placeholder="Search GithHub               /" name="search" class="input-search">        
+            </form>
+          <li class="sign-in nav-inline">Sign In</li>
+          <li class="sign-up nav-inline">Sign Up</li>
+        </div>
+        
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="containter-parent">
+      <div class="container-enfant">
+        <div class="div-gauche"> <!--METTRE EN INLINCE-BLOCK-->
+          <h1 class="h1">Where the world<br> builds software</h1>
+          <div class="div-gauche-texte-formulaire">
+            <p class="p-div-gauche">Millions of developers and companies build, ship, and maintain their 
+              software on GitHub — the largest and most advanced development platform in the world.
+            </p>
+            <!--formulaire adress-->
+            <form class="formulaire-adress">
+              <div class="container-input">
+                <input type="email" id="email" name="email" required placeholder="Your mail bro">
+                <button type="button" id="button">Sign up Man for GitHub</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+        <div class="div-droite"> <!--METTRE EN INLINCE-BLOCK-->
+          <img src="planet.png" style="width: 670px;">
+        </div>
+      </div>
+      <div class="number-parent"><!--en block-->
+        <div class="number-gauche"><!--METTRE EN INLINCE-BLOCK-->
+          <div class="number-dev"><!--METTRE EN INLINCE-BLOCK-->
+            <h2>73+ million</h2>
+            <p>Developers</p>
+          </div>
+          <div class="number-org"><!--METTRE EN INLINCE-BLOCK-->
+            <h2>4+ million</h2>
+            <p>Organizations</p>
+          </div>
+          <div class="number-rep"><!--METTRE EN INLINCE-BLOCK-->
+            <h2>200+ million</h2>
+            <p>Repositories</p>
+          </div>
+          <div class="number-fortune"><!--METTRE EN INLINCE-BLOCK-->
+            <h2>84%</h2>
+            <p>Fortune 100</p>
+          </div>
+        </div>
+        <div class="number-droite"><!--METTRE EN INLINCE-BLOCK-->
+          <div class="number-droite-img">
+            <img src="titanSNK.png" width="300px">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+
+ <style>
+   /*.search-container, .sign-in, .sign-up{
+     float: right;
+   }*/
+  /* html /pour que le background-color en gradient ne se répète pas*
+   {
+    height: 126%;
+  }*/
+   body{
+    background-color: rgb(63, 63, 63); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(1, 1, 77), rgb(66, 16, 16));
+    color: white;
+   }
+   /*CSS HEADER*/
+   .header{
+    font-weight: 400;
+    font-family: system-ui;
+   }
+   ul{
+    list-style-type: none;
+    margin: 0px 15% 0 15%;
+   }
+   .nav-inline{
+     display: inline-block;
+     margin-right: 21px;
+
+   }
+   .nav-border{
+     border-bottom: 1px solid white;
+   }
+   .li-border{
+    padding-bottom: 22px;
+   }
+   .ul-droite{
+     float: right;
+     margin-top: 15px;
+   }
+   .input-search{
+     background-color: #232b3900;
+     border-style: groove;
+     border-radius: 6px;
+     padding: 10px;
+   }
+
+   /*CSS MAIN*/
+   .container-enfant{
+    padding-top: 8%;
+    padding-bottom: 6%;
+   }
+   .h1{
+     font-family: "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 72px;
+      line-height: 76px;
+      letter-spacing: -4px;
+    }
+    .div-gauche, .div-droite{
+      display: inline-block;
+      position: relative;
+    }
+    .div-gauche{
+      z-index: 1;
+      left: 18%;
+      text-align: left;
+      width: 50%;
+    }
+    .div-gauche-texte-formulaire{
+      position: relative;
+      top: -33px;
+    }
+    .div-gauche-texte-formulaire{
+      font-family: "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+
+    .p-div-gauche{
+      font-size: 24px;
+      line-height: 32px;
+      max-width: 64%;
+      color: rgb(135, 159, 182);
+    }
+    #email{
+      padding: 1%;
+      padding-left: 24px;
+      border-radius: 5px;
+      background-color: #181a1b;
+      border-style: inset;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+    #button{
+      background-color: rgb(37, 131, 63);
+      color: white;
+      font-size: 1em;
+      padding: 0.9rem 1.5rem 1.1rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+      border-style: none;
+      cursor: pointer;
+      
+    }
+    .div-droite{
+      top: -136px;
+      float: right;
+      right: 9%
+    }
+    /*PARTIE DES NOMBRES*/
+    .number-parent{
+      display: block;
+    }
+    .number-gauche, .number-dev, .number-org, .number-rep, .number-fortune, .number-droite{
+      display: inline-block;
+    }
+    .number-gauche{
+      position: relative;
+      left: 18.5%;
+      width: 43%;
+    }
+    .number-droite{
+      float: right;
+      position: relative;
+      right: -17%;
+    }
+    .number-org, .number-rep, .number-fortune{
+      margin-left: 15%;
+    }
+    .number-droite-img{
+      top: -6em;
+      position: relative;
+    }
+  
+ </style>
+</body>
+</html>

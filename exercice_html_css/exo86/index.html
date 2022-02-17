@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>exercice</title>
+</head>
+<body>
+  <div class="container">
+	  <div class="header">
+		  <p>Entête</p>
+		</div>
+	  <div class="body">
+		  <div class="nav">
+			<p>Nav</p>
+		  </div>
+		  <div class="article">
+			<h2 id="entete">Entête</h2>
+			<p id="article">ceci est un article</p>
+		  </div>
+		  <div class="divers">
+			<p>Divers</p>
+		  </div>
+		  
+	  </div>
+	  <div class="footer">
+		  <p>Footer</p>
+	  </div>
+	  
+  </div>
+
+<style>
+	body{
+		margin: 0;
+	}
+	.container{
+		border: solid 1px black;
+	}
+	.header, .nav, .divers, .pieds, .footer{
+		text-align: center;
+	}
+	.header{
+		width: 100%;
+		border: 1px solid black;
+		background-color: hotpink;
+	}
+	.body{
+		display: flex;
+		flex-direction: row;
+	}
+	.article{
+		width: 80%;
+	}
+	.article #entete, #article{
+		margin-left: 10px;
+	}
+	.article h2{
+		margin-top: 100px;
+	}
+	.nav, .body, .divers{
+		height: 300px;
+		border: 1px solid black;
+	}
+	.nav{
+		width: 10%;
+		background-color: rgb(218, 218, 218);
+	}
+	.nav p, .divers p{
+		position: relative;
+		top: 110px;
+	}
+	.article{
+		background-color: rgb(128, 128, 128);
+		flex: 1;
+	}
+	.divers{
+		width: 10%;
+		background-color: rgb(177, 177, 177);
+	}
+	.footer{
+		width: 100%;
+		background-color: #ff8a00;
+		border: 1px solid black;
+	}
+	@media screen and (max-width: 900px) {
+		#article{
+			display: none;
+		}
+		#entete{
+			width: auto;
+			margin-left: 0px!important;
+		}
+		.body{
+			flex-direction: column;
+		}
+		.nav p, .divers p{
+			position: initial;
+			top: auto;
+		}
+		.nav, .divers{
+			width: 100%;
+		}
+		.article{
+			width: 100%;
+			text-align: center;
+			padding-bottom: 43px;
+		}
+	}
+	
+</style>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>exercice</title>
+	<link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Rowdies&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+	<header class="header">
+		<h1>Header</h1>
+	</header>
+	<div class="navbar">
+		<div class="accueil cursor">Accueil</div>
+		<div class="page1 cursor">Page 1</div>
+		<div class="page2 cursor">Page 2</div>
+		<div class="page3 cursor">Page 3</div>
+	</div>
+	<div class="body">
+		<div class="aside1">
+		  <p class="left">Aside1</p>
+		</div>
+		<div class="section">
+		  <p class="left">Section</p>
+		</div>
+		<div class="aside2">
+		  <p class="left">Aside2</p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container-link">
+			<div class="div-link1">
+				<div class="link cursor">Lien</div>
+				<div class="link cursor">Lien</div>
+				<div class="link cursor">Lien</div>
+			</div>
+			<div class="div-link2">
+				<div class="link cursor">Lien</div>
+				<div class="link cursor">Lien</div>
+				<div class="link cursor">Lien</div>
+			</div>
+			<div class="div-link3">
+				<div class="link cursor">Lien</div>
+				<div class="link cursor">Lien</div>
+				<div class="link cursor">Lien</div>
+			</div>
+		</div>
+	</div>
+  </div>
+
+<style>
+	body{
+		margin: 0px;
+		width: auto;
+		background-color: #253031;
+	}
+	.header{
+		background-color: #939196;
+		height: 100px;
+		width: 100%;
+	}
+	.header h1{
+		margin-top: 0px;
+		font-family: 'Quintessential', cursive;
+		margin-left: 10px;
+	}
+	.header h1::first-letter{
+		color: white;
+	}
+	.navbar{
+		height: 70px;
+		width: 100%;
+		background-color: #253031;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.accueil, .page1, .page2, .page3{
+		/* margin-top: 1px; */
+		height: 30px;
+		width: 15%;
+		margin: auto;
+		text-align: center;
+		padding-top: 10px;
+		border-radius: 5px;
+
+	}
+	.accueil{
+		background-color:#FFE2FE;
+	}
+	.page1, .page2, .page3{
+		background-color:#D3C1D2;
+	}
+	.body{
+		display: flex;
+	}
+	.aside1, .section, .aside2{
+		height: 300px;
+	}
+	.aside1, .aside2{
+		width: 10%;
+		background-color: #84DCC6;
+	}
+	.left{
+		margin-left: 10px;
+	}
+	.aside1, .section{
+		border-right: 3px solid purple;
+	}
+	.section{
+		width: 80%;
+		background-color: #D0EFB1;
+	}
+	.footer{
+		background-color: #77A6B6;		
+	}
+	.div-link1, .div-link2, .div-link3{
+		display: flex;
+		justify-content: space-around;
+	}
+	.div-link1, .div-link2{
+		margin-bottom: 25px;
+	}
+	.div-link1{
+		padding-top: 15px;
+	}
+	.div-link3{
+		padding-bottom: 15px;
+	}
+	.link{
+		color: #253031;
+	}
+	.cursor:hover{
+		cursor: pointer;
+	}
+</style>
+</body>
+</html>

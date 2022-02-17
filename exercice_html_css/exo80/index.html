@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>exercice</title>
+</head>
+<body>
+  <div class="container">
+	  <div class="child">
+			  <span>1</span>
+	  </div>
+	  <div class="child">
+			<span>2</span>
+	  </div>
+	  <div class="child">
+			<span>3</span>
+	  </div>
+	  <div class="child">
+			<span>4</span>
+
+	  </div>
+  </div>
+
+<style>
+	body{
+		margin: 0;
+	}
+	.container{
+		display: flex;
+		flex-direction: row;
+		height: 300px;
+		
+	}
+	.child{
+		height: 200px;
+		width: 100px;
+		display: flex;
+		font-size: 3em;
+	
+	}
+	.child:nth-child(1){
+		background-color: red;
+	}
+	.child:nth-child(2){
+		background-color: rgb(0, 255, 200);
+	}
+	.child:nth-child(3){
+		background-color: rgb(255, 238, 0);
+	}
+	.child:nth-child(4){
+		background-color: rgb(9, 255, 0);
+	}
+	span{
+		margin: auto;
+		border: 1px solid black;
+		padding: 13px;
+	}
+</style>
+</body>
+</html>

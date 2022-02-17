@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>exercice</title>
+</head>
+<body>
+  <div class="container">
+	<div class="container2">
+		<div class="block"><span>1</span></div>
+		<div class="block"><span>2</span></div>
+		<div class="block"><span>3</span></div>
+		<div class="block"><span>4</span></div>
+		<div class="block"><span>5</span></div>
+		<div class="block"><span style="color: white;">6</span></div>
+		<div class="block block7"><span style="position: relative;right: 5px; color: white;">7</span></div>
+		<div class="block"><span style="color: white;">8</span></div>
+	</div>
+  </div>
+
+<style>
+	body{
+		margin: 0px;
+		background-image: url('./creeper.svg.png');
+		background-repeat: no-repeat;
+		background-size: 800px;
+		
+	}
+	.container{
+		border: solid 1px black;
+		width: 800px;
+	}
+	.container2{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.container2>*{
+		flex:1 1 160px;
+	}
+	.block{
+		border: 1px solid black;
+		margin: auto;
+		height: 239px;
+	}
+	.block7{
+		text-align: right;
+	}
+</style>
+</body>
+</html>
